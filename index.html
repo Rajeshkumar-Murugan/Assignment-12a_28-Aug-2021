@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>Home</li>
+        <li>Voluteer form</li>
+        <li>About US</li>
+        <li>Contact us</li>
+       </ul>
+    
+    <div class="banner-image">
+    </div> 
+
+    <div id="fullcontent">
+    <form>
+   
+        <fieldset>
+            <legend>Personal Details</legend>
+    <div>    
+    <label for="Fname" class="mandatory" id="Flabel">First Name</label>
+    <input type="text" id="Fname" placeholder="Enter your first name" required maxlength="30">
+  
+    <label for="Lname" class="mandatory" id="Llabel">Last Name</label>
+    <input type="text" id="Lname" placeholder="Enter your last name" required maxlength="30">
+    </div> 
+        
+    
+    <div>
+        <label for="Email" class="mandatory" id="emailLabel"> Email ID</label>
+        <input type="email" id="Email" required placeholder="Enter your email">
+        <label for="Gender" class="mandatory" id="Genderlabel"> Gender</label>   
+                    <input type="radio" id="Male" name="Gender" required value="Male">
+                    <label for="Male" id="Malelabel">Male</label>                  
+                    <input type="radio" id="Female" name="Gender" required value="Female">
+                    <label for="Female" id="Femalelabel"> Female</label>
+    </div>
+            <div>
+                <label for="DOB" class="mandatory">Date of Birth</label>
+                <input type="date" id="DOB" required>
+                <label for="Phnum" class="mandatory"id="Phlabel"> Phone Number</label>
+                    <input type="number" maxlength="10" id="Phnum" required placeholder="Enter phone number" >
+                
+            </div>
+           
+          
+     </fieldset> 
+      
+            <div>
+                <fieldset>
+                    <legend>Technical Details</legend>
+                <div id="tech">
+                <label for="techSkills" class="mandatory">Language Know</label>
+                <select name="Technical_skills" id="techSkills" multiple>
+                    <option value="default">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Java Script</option>
+                    <option value="java">Java</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="techSkills" class="mandatory">Technical skills</label>
+                <select name="Technical_skills" id="techSkills" multiple>
+                    <option value="default">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">Java Script</option>
+                    <option value="java">Java</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            </fieldset>
+         </div>
+        
+    <div id="button">
+    <button>Submit</button>
+    </div>
+
+
+    </form>
+    
+</div>
+
+</body>
+</html>
